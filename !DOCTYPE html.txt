@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza & Movie Date 🍕🎬</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffe6f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ff4d88;
+      margin-bottom: 30px;
+    }
+
+    .option {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      background: #ff4d88;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e63e75;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Will you eat pizza and watch a movie with me? 🍕🎬</h1>
+
+    <div class="option">
+      <input type="checkbox" id="yes1" />
+      <label for="yes1">Yes 💖</label>
+    </div>
+
+    <div class="option">
+      <input type="checkbox" id="yes2" />
+      <label for="yes2">Definitely Yes 😌</label>
+    </div>
+
+    <button onclick="showMessage()">Submit</button>
+
+    <div id="message">
+      Yayyy 🥰 Date confirmed!
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
